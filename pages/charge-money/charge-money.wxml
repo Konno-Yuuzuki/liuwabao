@@ -1,0 +1,11 @@
+<!--pages/charge-money/charge-money.wxml-->
+<view class='charge-container'>
+  <view class='charge-title'>充值金额</view>
+  <view class='face-value' bindtap='chooseValue'>
+    <view class='value-list {{selectNum==0?"active":""}}' data-index="0" data-value="100">￥100</view>
+    <view class='value-list {{selectNum==1?"active":""}}' data-index="1" data-value="50">￥50</view>
+    <view class='value-list {{selectNum==2?"active":""}}' data-index="2" data-value="20">￥20</view>
+    <view class='value-list {{selectNum==3?"active":""}}' data-index="3" data-value="10">￥10</view>
+  </view>
+  <button class='charge-button ' bindtap='chargeMoney '>去充值</button>
+</view>

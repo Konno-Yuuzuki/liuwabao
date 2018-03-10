@@ -1,0 +1,5 @@
+<template name='loadingTemp'>
+  <canvas class='circle' style='width:240rpx; height:240rpx;' canvas-id='canvasLoading'>
+    <cover-view class='canvas-center'>{{canvasText}}</cover-view>
+  </canvas>
+</template>

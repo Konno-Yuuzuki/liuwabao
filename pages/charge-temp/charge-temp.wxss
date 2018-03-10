@@ -1,0 +1,87 @@
+.charge-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.charge-wrapper .mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1004;
+}
+
+.charge-wrapper .content-wrapper {
+  position: fixed;
+  width: 80%;
+  height: 40vh;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 6px;
+  z-index: 2000;
+}
+
+.charge-wrapper  .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.charge-wrapper  .content .title {
+  margin: 30rpx 0 20rpx;
+  color: #333;
+  text-align: center;
+}
+
+.charge-wrapper  .content .con-item {
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+}
+
+.charge-wrapper  .content .con-item .sub-title {
+  color: #333;
+  font-size: 34rpx;
+  margin-bottom: 20rpx;
+}
+
+.charge-wrapper  .content .con-item .text-wrapper {
+  display: flex;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.charge-wrapper  .content .con-item .text-wrapper .item {
+  flex: 1;
+}
+
+.charge-wrapper  .content .con-item .item view {
+  display: inline-block;
+}
+
+.charge-wrapper .operator {
+  display: flex;
+  border-top: 1rpx solid #f6f6f6;
+}
+
+.charge-wrapper .operator button {
+  flex: 1;
+  background: #fff;
+  border: none;
+  color: #444;
+}
+
+.charge-wrapper .operator button.active {
+  color: #31ca6f;
+  border-left: 1rpx solid #f6f6f6;
+}
+
+.charge-wrapper .operator button::after {
+  border: none;
+}

@@ -1,0 +1,148 @@
+page {
+  background-color: #f0eff6;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+  margin: 50rpx 0;
+}
+
+.content-wrapper {
+  width: 100%;
+  margin: 40rpx 0;
+}
+
+.content-wrapper .con-list {
+  width: 100%;
+  height: 89rpx;
+  line-height: 78rpx;
+  background-color: #fff;
+  font-size: 34rpx;
+  text-align: left;
+  box-sizing: border-box;
+  padding-left: 28rpx;
+  border-bottom: 1rpx solid #d8d8d8;
+  position: relative;
+}
+
+.content-wrapper .con-list:last-child {
+  margin-bottom: 0;
+}
+
+.container .userInfo {
+  width: 100%;
+  height: 410rpx;
+  background-image: linear-gradient(-180deg, #feeb00 0%, #fcd200 100%);
+}
+
+.userInfo image {
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 24rpx auto;
+}
+
+.userInfo .user-nickname {
+  width: 221rpx;
+  height: 33rpx;
+  font-size: 24rpx;
+  text-align: center;
+  display: block;
+  margin: 14rpx auto;
+}
+
+.remain-money {
+  width: 100%;
+  margin-top: 28rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+}
+
+.remain-money .remain {
+  font-size: 36rpx;
+}
+
+.remain-money .money {
+  font-size: 48rpx;
+}
+
+.refund-charge {
+  width: 100%;
+  display: block;
+  margin-top: 42rpx;
+  text-align: center;
+}
+
+.refund-charge text {
+  display: inline-block;
+  width: 220rpx;
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.refund-charge .goToCharge {
+  margin-left: 82rpx;
+}
+
+.content-wrapper .con-list .label-img {
+  width: 42rpx;
+  height: 42rpx;
+  vertical-align: middle;
+}
+
+.content-wrapper .con-list text {
+  margin-left: 45rpx;
+  vertical-align: middle;
+}
+
+.content-wrapper .con-list .icon-narrow {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+  position: absolute;
+  right: 28rpx;
+  top: 50%;
+  margin-top: -14rpx;
+}
+
+.exit {
+  width: 670rpx;
+  height: 94rpx;
+  line-height: 94rpx;
+  background: #f8f8f8;
+  border: 2rpx solid rgba(5, 5, 5, 0.10);
+  border-radius: 20rpx;
+  text-align: center;
+  font-size: 36rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 32rpx;
+  margin-left: -335rpx;
+  font-weight: bold;
+}
+
+.remove-number {
+  width: 670rpx;
+  height: 94rpx;
+  border: 2rpx solid rgba(5, 5, 5, 0.1);
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 94rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 160rpx;
+  margin-left: -335rpx;
+}
+

@@ -1,0 +1,18 @@
+<import src='../loading-temp/loading-temp.wxml' />
+
+<template name='getCarTemp'>
+  <cover-view class='getCar-mask'>
+    <cover-view class='getCar-container'>
+      <cover-view class='getCar-now'>正在取车</cover-view>
+      <cover-view class='getCar-hint'>向右滑动车辆取车</cover-view>
+      <cover-image class='getCar-img' src='../../images/quche.png'></cover-image>
+      <cover-view class='getCar-operation'>
+        <cover-view>右滑 </cover-view>
+        <cover-view>--> </cover-view>
+        <cover-view>取车</cover-view>
+      </cover-view>
+      <cover-view class='getCar-line'></cover-view>
+      <template is='loadingTemp' data="{{canvasText}}"/>
+    </cover-view>
+  </cover-view>
+</template>

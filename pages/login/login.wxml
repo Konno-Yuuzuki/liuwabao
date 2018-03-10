@@ -1,0 +1,28 @@
+<view class='login-wrapper'>
+  <image src='/images/toppic.png' class='bg-image'></image>
+  <image src='/images/logo.png' class='logo'></image>
+  <view class='input-wrapper'>
+    <view class='input-item'>
+      <image class='input-icon' src='/images/login_iphone_icon_lv.png'></image>
+      <input class='input-con' bindinput="bindKeyInput" placeholder-class="placeholder-class" placeholder='请输入手机号' type='number'></input>
+    </view>
+    <view catchtap='getIdentifyingCode' style='color: {{codeColor}}' class='post-code'>{{codeText}}</view>
+    <view class='input-item'>
+      <image class='input-icon' focus src='/images/login_authcode_icon_lv.png'></image>
+      <input class='input-con' bindinput='bindVerifyInput' placeholder-class="placeholder-class" placeholder='请输入验证码' type='number'></input>
+    </view>
+    <view class='login-btn-wrapper' catchtap='onLogin'>
+      <image class='login-btn' src='/images/login_btn.png'></image>
+    </view>
+    <view class='text-wrapper'>
+      <text class='text'>点击登录，即表示已阅读并同意</text>
+      <text class='text contract' bindtap='gotoAgreement'>《用车服务协议》</text>
+    </view>
+  </view>
+  <!-- <view class='wechat-wrapper'>
+    <button class="wehchat-fix" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" bindtap='onWechatLogin'>
+      <image class='wechat-logo' src='/images/wechat.png'></image>
+      <text class='text'>微信登录</text>
+    </button>
+  </view> -->
+</view>

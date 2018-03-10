@@ -1,0 +1,369 @@
+@import '../head-temp/head-temp.wxss';
+@import '../control-temp/control-temp.wxss';
+@import '../charge-temp/charge-temp.wxss';
+@import '../getcar-temp/getcar-temp.wxss';
+@import '../loading-temp/loading-temp.wxss';
+
+page {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+.mapBox {
+  width: 100%;
+  height: 50vh;
+}
+
+.content-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  height: 15vh;
+}
+
+.content-wrapper .index-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-wrapper .title {
+  margin-top: 20rpx;
+  line-height: 60rpx;
+  font-size: 50rpx;
+  color: #313131;
+  text-align: center;
+}
+
+.index-wrapper .recharge-wrapper {
+  margin: 0 40rpx;
+}
+
+.index-wrapper .bg-line {
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.index-wrapper .recharge-list {
+  display: flex;
+  padding: 20rpx 0;
+  justify-content: space-between;
+}
+
+.index-wrapper .recharge-list .desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-wrapper .recharge-list .head-text {
+  line-height: 40rpx;
+  color: #161616;
+  font-size: 36rpx;
+}
+
+.index-wrapper .recharge-list .row-text {
+  line-height: 40rpx;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+
+.index-wrapper .recharge-list .purchase {
+  display: flex;
+}
+
+.index-wrapper .recharge-list .pay-num {
+  font-size: 64rpx;
+}
+
+.index-wrapper .recharge-list .pay-unit {
+  margin-top: 20rpx;
+  line-height: 66rpx;
+  font-size: 28rpx;
+}
+
+.index-wrapper .btn-wrapper {
+  width: 600rpx;
+  height: 176rpx;
+  margin: 0 auto 40rpx;
+  background: #fff;
+  z-index: 1000;
+}
+
+.index-wrapper .btn-wrapper::after {
+  border: none;
+}
+
+.index-wrapper .sub-btn {
+  width: 600rpx;
+  height: 176rpx;
+}
+
+.container .btn-wrapper {
+  width: 672rpx;
+  height: 164rpx;
+  position: fixed;
+  left: 50%;
+  margin-left: -336rpx;
+  bottom: 0vh;
+}
+
+.container {
+  width: 100%;
+  /* display: flex; *//* justify-content: center; */
+}
+
+.container .btn {
+  width: 672rpx;
+  height: 164rpx;
+}
+
+.introduce .logo-box {
+  width: 100%;
+  height: 80rpx;
+  opacity: 0.7;
+  background: #fde900;
+  margin-bottom: 26rpx;
+}
+
+.introduce .logo {
+  width: 198rpx;
+  height: 58rpx;
+  display: block;
+  margin: 10rpx auto;
+}
+
+.introduce .bannar {
+  width: 720rpx;
+  height: 218rpx;
+  margin: 0 auto;
+}
+
+/* 预付款、用车计费 */
+
+.charges {
+  width: 100%;
+  height: 300rpx;
+  box-sizing: border-box;
+}
+
+.charges .charges-list {
+  width: 100%;
+  /* height: 250rpx; */
+  box-sizing: border-box;
+  padding: 0 36rpx 0 40rpx;
+  position: relative;
+  margin-top: 35rpx;
+  margin-bottom: 30rpx;
+}
+
+.charges .charges-title {
+  font-size: 36rpx;
+  color: #161616;
+  letter-spacing: 0;
+  line-height: 40rpx;
+  font-weight: bold;
+}
+
+.charges .charges-introduce {
+  font-size: 28rpx;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 40rpx;
+}
+
+.charges .charges-money {
+  position: absolute;
+  right: 36rpx;
+  top: 2rpx;
+  color: #f5bf10;
+}
+
+.charges .charges-money::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.charges .charges-money .c-m-top {
+  display: inline-block;
+  font-size: 64rpx;
+}
+
+.charges .charges-money .c-m-bottom {
+  display: inline-block;
+  font-size: 28rpx;
+  margin-top: -20rpx;
+}
+
+.charges .charge-line {
+  width: 680rpx;
+  height: 1rpx;
+  background: #e0e0e0;
+  margin: 0 auto;
+}
+
+/* 桩信息框 */
+
+.marks-detail {
+  width: 680rpx;
+  height: 128rpx;
+  position: fixed;
+  left: 50%;
+  bottom: 160rpx;
+  margin-left: -340rpx;
+  transform: translateY(186rpx);
+  z-index: 100;
+  display: none;
+  background: #fff;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 6px;
+}
+
+.showMarkDetail {
+  display: block;
+  animation: showMarkDetail 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showMarkDetail {
+  from {
+    transform: translateY(186rpx);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.marks-detail .address-name {
+  font-size: 32rpx;
+  color: #000;
+  letter-spacing: 0;
+  margin-left: 24rpx;
+  margin-top: 20rpx;
+  font-weight: bold;
+  line-height: 45rpx;
+}
+
+.marks-detail .address {
+  font-size: 28rpx;
+  color: #464646;
+  letter-spacing: 0;
+  margin-left: 24rpx;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+
+.marks-detail .open-time {
+  font-size: 24rpx;
+  color: #464646;
+  letter-spacing: 0;
+  position: absolute;
+  right: 24rpx;
+  top: 28rpx;
+}
+
+/* 地图中心位置 */
+
+.centerLocation {
+  width: 60rpx;
+  height: 60rpx;
+  background-color: transparent;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -18rpx;
+  margin-right: -18rpx;
+}
+
+.centerLocation cover-image {
+  width: 100%;
+  height: 100%;
+}
+
+.introduce {
+  width: 100%;
+  height: 620rpx;
+}
+
+/* 系统警告 */
+
+.system-error-mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* opacity: 0.47; */
+  background-color: rgba(0, 0, 0, 0.47);
+  display: none;
+}
+
+.system-error-mask .system-error {
+  width: 580rpx;
+  height: 752rpx;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 20rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 42rpx;
+  display: flex;
+  z-index: 200;
+}
+
+.system-error-mask .sys-error {
+  font-size: 32rpx;
+  color: #000;
+  line-height: 45rpx;
+}
+
+.system-error-mask .scan-again {
+  font-size: 24rpx;
+  color: #545454;
+  line-height: 33rpx;
+  margin-bottom: 70rpx;
+}
+
+.system-error-mask .big-warning-img {
+  width: 240rpx;
+  height: 240rpx;
+  margin-bottom: 60rpx;
+}
+
+.system-error-mask .scan-again-img {
+  width: 550rpx;
+  height:146rpx;
+  /* margin-bottom: 26rpx; */
+}
+
+.system-error-mask .next-talk {
+  font-size: 32rpx;
+  color: #545454;
+  letter-spacing: 0;
+  line-height: 45rpx;
+}
+
+.isCanvas{
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+}
+.getCar-now{
+  display: block;
+}

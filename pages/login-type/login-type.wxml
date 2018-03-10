@@ -1,0 +1,17 @@
+<view class='login-type'>
+  <view class='banner'>
+    <image src='../../images/banner.png'></image>
+  </view>
+  <view class='btn-type'>
+    <view class='login-box'>
+      <image class='wx-button' src='../../images/wx-button.png'></image>
+      <button class='wehchat-fix' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" bindtap='onWechatLogin'> </button>
+    </view>
+
+    <cover-view class='phone-text' catchtap='toLogin'>输入手机号码登录</cover-view>
+  </view>
+  <view class='text-wrapper'>
+    <text class='text'>点击登录，即表示已阅读并同意</text>
+    <text class='text contract' bindtap='gotoAgreement'>《用车服务协议》</text>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/return-car/return-car.wxml-->
+<view class='container'>
+  <view class='example-box'>
+    <!-- <image src=''></image> -->
+    <view class='example-title'>照片实例</view>
+    <view class='example'>
+      <image></image>
+    </view>
+    <view class='example-hint'>照片要求：童车放入车桩内，清晰可见童车二维码。</view>
+  </view>
+  <view class='prove-box'>
+    <view class='prove-title'>上传凭证</view>
+    <view class='prove-image' bindtap='selectImages'>
+       <image class='icon-camera' src='../../images/icon_camera.png'></image> 
+    </view>
+  </view>
+  <view class='submit' bindtap='submit'>提交</view>
+  <view class='important'>提交后您的账户会被暂时冻结</view>
+</view>

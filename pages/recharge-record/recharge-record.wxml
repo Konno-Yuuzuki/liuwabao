@@ -1,0 +1,9 @@
+<!--pages/recharge-record/recharge-record.wxml-->
+<view class='container'>
+  <view class='charge-list' wx:for='{{chargeRecord}}'>
+    <view class='title'>充值记录</view>
+    <view class='productId'>商品编号：{{item.merchantId}}</view>
+    <view class='time'>{{item.startTime}}</view>
+    <view class='value'>{{item.amount/100}}</view>
+  </view>
+</view>

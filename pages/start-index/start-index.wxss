@@ -1,0 +1,60 @@
+.index-wrapper .title {
+  margin-top: 20rpx;
+  line-height: 60rpx;
+  font-size: 50rpx;
+  color: #313131;
+  text-align: center;
+}
+
+.index-wrapper .recharge-wrapper {
+  margin: 0 40rpx;
+}
+
+.index-wrapper .bg-line {
+  width: 100%;
+  height: 1px;
+  background: #e0e0e0;
+}
+
+.index-wrapper .recharge-list {
+  display: flex;
+  padding: 20rpx 0;
+  justify-content: space-between;
+}
+
+.index-wrapper .recharge-list .desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-wrapper .recharge-list .head-text {
+  line-height: 40rpx;
+  color: #161616;
+  font-size: 36rpx;
+}
+
+.index-wrapper .recharge-list .row-text {
+  line-height: 40rpx;
+  margin-top: 5rpx;
+  font-size: 28rpx;
+}
+
+.index-wrapper .recharge-list .purchase {
+  display: flex;
+}
+
+.index-wrapper .recharge-list .pay-num {
+  font-size: 64rpx;
+}
+
+.index-wrapper .recharge-list .pay-unit {
+  margin-top: 20rpx;
+  line-height: 66rpx;
+  font-size: 28rpx;
+}
+
+.index-wrapper .sub-btn {
+  width: 600rpx;
+  height: 176rpx;
+  margin: 0 auto 40rpx;
+}

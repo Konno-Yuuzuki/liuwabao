@@ -1,0 +1,21 @@
+<!--pages/change-number/change-number.wxml-->
+<view class='changeNum-contaienr'>
+  <view class='input-wrapper'>
+    <view class='input-item'>
+      <image class='input-icon' src='/images/login_iphone_icon_lv.png'></image>
+      <input class='input-con' bindinput="bindKeyInput" placeholder-class="placeholder-class" placeholder='请输入手机号' type='number'></input>
+    </view>
+    <view catchtap='getIdentifyingCode' style='color: {{codeColor}}' class='post-code'>{{codeText}}</view>
+    <view class='input-item'>
+      <image class='input-icon' focus src='/images/login_authcode_icon_lv.png'></image>
+      <input class='input-con' bindinput='bindVerifyInput' placeholder-class="placeholder-class" placeholder='请输入验证码' type='number'></input>
+    </view>
+    <view class='login-btn-wrapper' catchtap='onLogin'>
+      <view class='login-btn'>更换手机号</view>
+    </view>
+    <!-- <view class='text-wrapper'>
+      <text class='text'>点击登录，即表示已阅读并同意</text>
+      <text class='text contract'>《用车服务协议》</text>
+    </view> -->
+  </view>
+</view>

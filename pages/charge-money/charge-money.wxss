@@ -1,0 +1,52 @@
+/* pages/charge-money/charge-money.wxss */
+
+view {
+  box-sizing: border-box;
+}
+
+.charge-container {
+  width: 100%;
+  height: auto;
+}
+
+.charge-container .charge-title {
+  width: 100%;
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  padding-left: 40rpx;
+}
+
+.charge-container .face-value {
+  width: 100%;
+  column-width: 50%;
+  column-count: 2;
+  column-gap: 0;
+  break-inside: avoid;
+  padding-top: 30rpx;
+}
+
+.face-value .value-list {
+  width: 260rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border: 1rpx solid green;
+  margin: 0 auto 30rpx;
+  border-radius: 10rpx;
+}
+
+.charge-container .face-value .active {
+  background-color: green;
+  color: #fff;
+}
+
+.charge-container .charge-button {
+  width: 90%;
+  color: #fff;
+  background-color: green;
+  position: absolute;
+  left: 50%;
+  bottom: 6vh;
+  margin-left: -45%;
+}

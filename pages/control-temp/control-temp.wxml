@@ -1,0 +1,22 @@
+<template name="controlTemp">
+  <!-- <cover-view class='control-wrapper'>
+    <cover-image class='refresh' src='/images/refresh.png'></cover-image>
+    <cover-image class='position' src='/images/position.png'></cover-image>
+    <cover-image catchtap='onMakeCall' class='contact' src='/images/contact.png'></cover-image> -->
+  <!-- </cover-view>  -->
+
+  <!-- 获取当前的定位 -->
+  <cover-view class='catchLocation' bindtap='getLocationInfo'>
+    <cover-image src='../../images/location.png'></cover-image>
+  </cover-view>
+
+  <!-- 故障管理 -->
+  <cover-view class='problem_setting' catchtap='goToProblemSetting'>
+    <cover-image src='../../images/icon_setting.png'></cover-image>
+  </cover-view>
+
+  <!-- 联系客户 -->
+  <cover-view class='customer-service' catchtap='contactService'>
+    <cover-image src='../../images/contact.png'></cover-image>
+  </cover-view>
+</template>

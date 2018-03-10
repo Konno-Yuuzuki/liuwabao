@@ -1,0 +1,5 @@
+<!--pages/bind-wechat/bind-wechat.wxml-->
+<view class='container'>
+  <image src=''></image>
+
+</view>

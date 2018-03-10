@@ -1,0 +1,40 @@
+<template name="chargeTemp">
+  <view class='charge-wrapper'>
+    <view class='mask'></view>
+    <view class='content-wrapper'>
+      <view class='content'>
+        <view class='title'>计费规则</view>
+        <view class='con-item'>
+          <view class='sub-title'>用车时长30分钟内</view>
+          <view class='text-wrapper'>
+            <view class='item'>
+              <view>单位费率:</view>
+              <view>30元</view>
+            </view>
+            <view class='item'>
+              <view>计费周期:</view>
+              <view>30分钟</view>
+            </view>
+          </view>
+        </view>
+        <view class='con-item'>
+          <view class='sub-title'>用车时长大于30分钟</view>
+          <view class='text-wrapper'>
+            <view class='item'>
+              <view>单位费率:</view>
+              <view>50元</view>
+            </view>
+            <view class='item'>
+              <view>计费周期:</view>
+              <view>50分钟</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='operator'>
+          <button class='cancel' catchtap='onChargeTempCancel'>取消</button>
+        <button class='confirm' catchtap='onChargeTempConfirm' class='active'>确定</button>  
+      </view>
+    </view>
+  </view>
+</template>

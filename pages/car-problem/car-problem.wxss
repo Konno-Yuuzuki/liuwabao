@@ -1,0 +1,128 @@
+/* pages/car-problem/car-problem.wxss */
+
+view {
+  box-sizing: border-box;
+}
+
+.problem-container {
+  width: 100%;
+  height: auto;
+  padding: 20rpx 0;
+}
+
+.problem-default {
+  background: #fefcee;
+  margin-bottom: 40rpx;
+  padding: 0 44rpx;
+}
+
+.problem-title {
+  font-size: 32rpx;
+  color: #000;
+  /* margin-left: 44rpx; *//* margin-top: 20rpx; */
+  margin-bottom: 30rpx;
+}
+
+.problem-container .problem-list {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  float: left;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.problem-list .image-box {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto;
+  border: 1rpx solid #d3d3d3;
+  border-radius: 120rpx;
+  display: flex;
+  background-color: #fff;
+}
+
+.problem-container .active .image-box {
+  background-color: #faef4c;
+}
+
+.problem-container .problem-list .image-box image {
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  margin: auto;
+}
+
+.problem-container .problem-list text {
+  margin-top: 20rpx;
+}
+
+.other-problem {
+  margin-bottom: 30rpx;
+  padding: 0 44rpx;
+}
+
+.other-problem .other-title {
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+}
+
+.other-problem .get-photo {
+  width: 660rpx;
+  height: 400rpx;
+  border: 1px dashed #979797;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.other-problem .get-photo .icon-camrea {
+  width: 125rpx;
+  height: 107rpx;
+}
+
+.other-problem .get-photo .selectImage {
+  max-width: 660rpx;
+  max-height: 400rpx;
+}
+
+.submit_btn {
+  width: 604rpx;
+  height: 88rpx;
+  background-color: #a7a7a7;
+  border-radius: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  color: #fff;
+  margin: 10rpx auto;
+}
+
+.problem-container .btn-able {
+  background-image: linear-gradient(to right, #feeb00 0%, #fcd200 100%);
+  color: #000;
+}
+
+label.description{
+  margin-bottom: 8rpx;
+}
+
+.description {
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #979797;
+  border-radius: 6px;
+  padding: 4rpx 20rpx; 
+  box-sizing: border-box;
+}

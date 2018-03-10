@@ -1,0 +1,6 @@
+<template name="headTemp">
+  <cover-view class='head-wrapper' catchtap='goUserCenter'>
+    <cover-image src='{{avatarUrl}}' class='user-avatar'></cover-image>
+    <cover-view class='user-text deep-grey'>{{nickName}}</cover-view>
+  </cover-view>
+</template>

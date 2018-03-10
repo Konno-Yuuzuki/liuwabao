@@ -1,0 +1,50 @@
+<!--pages/car-problem/car-problem.wxml-->
+<view class='problem-container'>
+  <view class='problem-default'>
+    <view class='problem-title'>请选择损坏部位</view>
+    <view class='problem-images clearfix' bindtap='chooseProblem'>
+      <view class='problem-list {{chooseIndex==0?"active":""}}' data-index='0'>
+        <view class='image-box' data-index='0'>
+          <image data-index='0' src='../../images/problem_zd.png'></image>
+        </view>
+        <text data-index='0'>坐凳</text>
+      </view>
+      <view class='problem-list {{chooseIndex==1?"active":""}}' data-index='1'>
+        <view class='image-box' data-index='1'>
+          <image data-index='1' src='../../images/problem_bs.png'></image>
+        </view>
+        <text data-index='1'>把手</text>
+      </view>
+      <view class='problem-list {{chooseIndex==2?"active":""}}' data-index='2'>
+        <view class='image-box' data-index='2'>
+          <image data-index='2' src='../../images/problem_wq.png'></image>
+        </view>
+        <text data-index='2'>围圈</text>
+      </view>
+      <view class='problem-list {{chooseIndex==3?"active":""}}' data-index='3'>
+        <view class='image-box' data-index='3'>
+          <image data-index='3' src='../../images/problem_lz.png'></image>
+        </view>
+        <text data-index='3'>轮子</text>
+      </view>
+      <view class='problem-list {{chooseIndex==4?"active":""}}' data-index='4'>
+        <view class='image-box' data-index='4'>
+          <image data-index='4' src='../../images/problem_fs.png'></image>
+        </view>
+        <text data-index='4'>扶手</text>
+      </view>
+    </view>
+  </view>
+  <!-- 其他 -->
+  <view class='other-problem'>
+    <view class='other-title'>
+      <label for='description'>其他</label>
+      <input id='description' class='description' bindinput='getProblemInfo'></input>
+    </view>
+    <view class='get-photo' bindtap='chooseImage'>
+      <image class='icon-camrea' src='../../images/icon_camera.png' wx:if='{{!selectImage}}'></image>
+      <image class='selectImage' mode='aspectFit' src='{{selectImage}}' wx:if='{{selectImage}}'></image>
+    </view>
+  </view>
+  <view class='submit_btn {{chooseIndex>=0?"btn-able":""}} {{selectImage?"btn-able":""}}' bindtap='submitProblem'>提交</view>
+</view>

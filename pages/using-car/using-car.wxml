@@ -1,0 +1,44 @@
+<import src='../map-temp/map-temp.wxml' />
+<import src='../pile-temp/pile-temp.wxml' />
+
+<view class='container' catchtap='goChange'>
+  <template is="mapTemp" data="{{hasLogin, userinfo, markers,longitude,latitude}}" />
+  <!-- 用车提示界面 -->
+  <cover-view class='content-wrapper'>
+    <cover-view class='use-wrapper'>
+      <cover-image class='problem-btn' bindtap="uploadCarProblem" src='/images/car_wrong.png'></cover-image>
+      <cover-view class='title'>正在用车...</cover-view>
+      <cover-view class='car-info' catchtap='gotoProblem'>车辆编号 No.123456789</cover-view>
+      <cover-view class='calcu-wrapper'>
+
+        <cover-image catchtap='clearTimer' class='car-img' src='/images/homepage_background_car1.png'></cover-image>
+        <cover-view class='user-detail'>
+          <cover-view class='using-desc'>
+            <cover-image class='using-icon' src='/images/using_time_icon.png'></cover-image>
+            <cover-view class='num active-text'>{{countTime}}</cover-view>
+            <cover-view class='text'>使用时间</cover-view>
+          </cover-view>
+          <cover-view class='using-desc'>
+            <cover-image class='using-icon' src='/images/using_cost_icon.png'></cover-image>
+            <cover-view class='num extra'>
+              <cover-view class='active-text'>￥{{fee/100}}</cover-view>
+            </cover-view>
+            <cover-view class='text'>使用费用</cover-view>
+          </cover-view>
+        </cover-view>
+      </cover-view>
+      <!-- <cover-view class='car-warn'>用车完毕，请将车还入车桩，系统自动结算</cover-view> -->
+      <cover-view class='calcu-help'>
+        <!-- 还车示意图 -->
+        <cover-view class='return-car-map'></cover-view>
+        <!-- <cover-view class='return-car' bindtap='returnCarWrong'>还车失败</cover-view> -->
+      </cover-view>
+    </cover-view>
+  </cover-view>
+  <!-- <template is='pileTemp' /> -->
+  <cover-view class='marks-detail {{showMarkDetail?"showMarkDetail":""}}' id='1'>
+    <cover-view class='address-name'>凯德梦之龙购物中心</cover-view>
+    <cover-view class='address'>上海市闵行区沪闵路6088号</cover-view>
+    <cover-view class='open-time'>营业时间: 09:00-18:00</cover-view>
+  </cover-view>
+</view>

@@ -1,0 +1,40 @@
+<view class='container'>
+  <view class='userInfo'>
+    <image src='{{userinfo.avatarUrl}}' class='user-avatar'></image>
+    <text class='user-nickname'>昵称 {{userinfo.nickName}}</text>
+    <view class='remain-money'>
+      <text class='remain'>余额  </text>
+      <text class='money'> {{userWallet?userWallet:"0"}}元</text>
+    </view>
+    <view class='refund-charge'>
+      <text bindtap='refundMoney' wx:if='{{userWallet}}'>退余额</text>
+      <!-- <text class='goToCharge' catchtap='goToCharge'>去充值</text> -->
+    </view>
+  </view>
+  <!-- <view class='user-nickname'>{{userinfo.nickName}}</view> -->
+
+  <view class='content-wrapper'>
+    <view catchtap='onUseRecord' class='con-list'>
+      <image class='label-img' src='../../images/icon_borrow_car.png'></image>
+      <text>借车记录</text>
+      <image class='icon-narrow' src='../../images/Combined Shape.png'></image>
+    </view>
+    <view class='con-list' bindtap='gotoChargeRecord'>
+      <image class='label-img' src='../../images/icon_charge.png'></image>
+      <text>充值记录</text>
+      <image class='icon-narrow' src='../../images/Combined Shape.png'></image>
+    </view>
+    <!-- <view catchtap='onMakeCall' class='con-list'>
+      <image class='label-img' src=''></image>
+      <text>联系客服</text>
+      <image class='icon-narrow' src='../../images/Combined Shape.png'></image>
+    </view> -->
+    <view class='con-list' bindtap='gotoDirections'>
+      <image class='label-img' src='../../images/icon_directions.png'></image>
+      <text>使用说明</text>
+      <image class='icon-narrow' src='../../images/Combined Shape.png'></image>
+    </view>
+  </view>
+  <!-- <view class='remove-number' bindtap='changeNum'>更换手机号</view> -->
+  <view class='exit' bindtap='exitLogin'>退出登陆</view>
+</view>

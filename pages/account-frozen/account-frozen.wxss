@@ -1,0 +1,119 @@
+/* pages/account-frozen/account-frozen.wxss */
+
+view {
+  box-sizing: border-box;
+}
+
+.contianer {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+}
+
+.hint-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 26rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.big-succcess-img {
+  width: 240rpx;
+  height: 240rpx;
+  margin-bottom: 22rpx;
+}
+
+.hint-box .t-j-c-g {
+  font-size: 36rpx;
+  color: #161616;
+  letter-spacing: 0;
+  margin-bottom: 10rpx;
+}
+
+.hint-box .success-hint {
+  font-size: 29rpx;
+  color: #545454;
+  letter-spacing: 0;
+  margin-bottom: 14rpx;
+}
+
+.hint-box .success-time {
+  font-size: 24rpx;
+  color: #545454;
+  letter-spacing: 0;
+  margin-bottom: 70rpx;
+}
+
+.hint-box .the-consume {
+  font-size: 36rpx;
+  color: #161616;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.hint-box .consume-value {
+  color: #161616;
+  margin-bottom: 22rpx;
+}
+
+.hint-box .consume-value .yuan {
+}
+
+.hint-box .consume-value .money-value {
+  font-size: 72rpx;
+  color: #161616;
+  letter-spacing: 0;
+}
+
+.hint-box .account-about {
+  margin-bottom: 40rpx;
+}
+
+.hint-box .account-about image {
+  width: 28rpx;
+  height: 28rpx;
+  vertical-align: middle;
+}
+
+.hint-box .account-about text {
+  font-size: 28rpx;
+  color: #ff2626;
+  letter-spacing: 0;
+  vertical-align: middle;
+  margin-left: 14rpx;
+}
+
+.list-box {
+  width: 100%;
+  height: auto;
+  padding-left: 34rpx;
+  padding-right: 30rpx;
+  background-color: #fff;
+}
+
+.list-box .list {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #d8d8d8;
+}
+
+.list-box .list .list-label {
+  font-size: 32rpx;
+  color: #666;
+  letter-spacing: 0;
+}
+
+.list-box .list .list-value {
+  font-size: 32rpx;
+  color: #333;
+  letter-spacing: 0;
+}

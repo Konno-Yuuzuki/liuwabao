@@ -1,0 +1,77 @@
+.login-type .banner {
+  width: 100%;
+  height: 420rpx;
+}
+
+.login-type .banner image{
+  width: 100%;
+  height: 100%;
+}
+
+.login-type .btn-type {
+  width: 100%;
+  height: 200rpx;
+  margin-top: 30rpx;
+}
+
+.btn-type .wehchat-fix {
+  display: flex;
+  justify-content: center;
+  /* width: 500rpx;
+  height: 86rpx; */
+  width: 700rpx;
+  height: 168rpx;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -350rpx;
+  margin-top: -84rpx;
+}
+
+.btn-type .wehchat-fix::after {
+  border: 0;
+}
+
+.btn-type .text {
+  line-height: 86rpx;
+  font-size: 35rpx;
+  color: white;
+}
+
+.text-wrapper {
+  position: absolute;
+  bottom: 44rpx;
+  width: 100%;
+  font-size: 26rpx;
+  color: #454545;
+  text-align: center;
+}
+
+.text-wrapper .contract {
+  color: #f5bd12;
+}
+
+.btn-type .phone-text {
+  width: 100%;
+  height: 124rpx;
+  line-height: 124rpx;
+  text-align: center;
+  color: #f5bd12;
+  border: none;
+  background: #fff;
+}
+
+.login-box {
+  width: 100%;
+  height: 168rpx;
+  position: relative;
+}
+
+.wx-button {
+  width: 700rpx;
+  height: 168rpx;
+  display: block;
+  margin: 0 auto;
+}
+

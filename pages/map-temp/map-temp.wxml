@@ -1,0 +1,12 @@
+<import src='../charge-temp/charge-temp.wxml' />
+<import src='../control-temp/control-temp.wxml' />
+<import src='../head-temp/head-temp.wxml' />
+<template name="mapTemp">
+  <!-- <template is="chargeTemp" wx:if="{{!isShowModal}}" />  -->
+  <!-- <map id="map" longitude="121.425009" latitude="31.18136" scale="14" controls="{{controls}}" markers="{{markers}}" show-location style="width: 100%; height: 100vh;">
+    <template is="headTemp" data="{{...userinfo}}" wx:if="{{hasLogin}}" />
+  </map> -->
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" controls="{{controls}}" markers="{{markers}}" show-location style="width: 100%; height: 100vh;" bindmarkertap='getMarksData' bindtap='clickMap' bindregionchange="mapRegionchange"></map>
+  <template is="headTemp" data="{{...userinfo}}" wx:if="{{hasLogin}}" />
+  <template is='controlTemp' />
+</template>

@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/return-car/return-car",
+    "pages/using-car/using-car",
+    "pages/choose-car/choose-car",
+    "pages/recharge-record/recharge-record",
+    "pages/login-agreement/login-agreement",
+    "pages/use-directions/use-directions",
+    "pages/account-frozen/account-frozen",
+    "pages/car-problem/car-problem",
+    "pages/result/result",
+    "pages/change-number/change-number",
+    "pages/charge-money/charge-money",
+    "pages/login-type/login-type",
+    "pages/user-center/user-center",
+    "pages/car-record/car-record",
+    "pages/login/login",
+    "pages/bind-wechat/bind-wechat"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "熊猫遛娃",
+    "navigationBarTextStyle": "#fff"
+  }
+}

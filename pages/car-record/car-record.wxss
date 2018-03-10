@@ -1,0 +1,24 @@
+.record-wrapper {
+  width: 100%;
+}
+
+.record-wrapper .record-item {
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-top: 1rpx solid #ccc;
+}
+ 
+.record-wrapper .record-item .desc {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.record-wrapper .record-item .car-list {
+  margin-bottom: 10rpx;
+}
+
+.record-wrapper .record-item .detail {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1rpx solid #ddd;
+}

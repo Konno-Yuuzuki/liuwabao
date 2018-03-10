@@ -1,0 +1,15 @@
+.light-grey {
+  color: #999;
+}
+
+.grey {
+  color: #666;
+}
+
+.deep-grey {
+  color: #333;
+}
+
+.light-yellow {
+  color: #f5bf10;
+}

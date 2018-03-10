@@ -1,0 +1,86 @@
+/* pages/return-car/return-car.wxss */
+
+view {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 0 45rpx;
+}
+
+.example-box {
+  width: 100%;
+  height: auto;
+  padding-top: 15rpx;
+}
+
+.example-box .example-title {
+  font-size: 32rpx;
+  color: #000;
+  line-height: 45rpx;
+}
+
+.example-box .example {
+  width: 660rpx;
+  height: 400rpx;
+  background: #d8d8d8;
+  margin-bottom: 14rpx;
+}
+
+.example-box .example-hint {
+  font-size: 28rpx;
+  color: #575757;
+  /* margin: 0 auto; */
+}
+
+.prove-box {
+  width: 100%;
+  height: auto;
+  margin-top: 35rpx;
+  margin-bottom: 34rpx;
+}
+
+.prove-box .prove-title {
+  font-size: 32rpx;
+  color: #000;
+  line-height: 45rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.prove-box .prove-image {
+  width: 660rpx;
+  height: 400rpx;
+  display: flex;
+  border: 1px dashed #979797;
+  border-radius: 6px;
+}
+
+.prove-box .icon-camera {
+  width: 125rpx;
+  height: 107rpx;
+  margin: auto;
+}
+
+.submit {
+  width: 604rpx;
+  height: 88rpx;
+  background-color: #a7a7a7;
+  border-radius: 88rpx;
+  text-align: center;
+  line-height: 88rpx;
+  /* color: #fff; */
+  margin: 0 auto 18rpx;
+  background-image: linear-gradient(to right, #feeb00 0%, #fcd200 100%);
+  color: #000;
+}
+
+.important {
+  font-size: 24rpx;
+  color: #ff2626;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 33rpx;
+}

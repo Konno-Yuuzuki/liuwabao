@@ -1,0 +1,13 @@
+/* pages/use-directions/use-directions.wxss */
+
+.container {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.container .title{
+  text-align: center;
+  margin-bottom: 20rpx;
+}

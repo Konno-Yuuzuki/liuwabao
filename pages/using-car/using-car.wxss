@@ -1,0 +1,160 @@
+@import '../head-temp/head-temp.wxss';
+@import '../control-temp/control-temp.wxss';
+@import '../pile-temp/pile-temp.wxss';
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.content-wrapper {
+  position: absolute;
+  width: 100%;
+  /* height: 540rpx; *//* bottom: 0; */
+  height: 634rpx;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1000;
+}
+
+.use-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.use-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.use-wrapper .title {
+  /* margin: 40rpx 0; */
+  font-size: 48rpx;
+  color: #333;
+}
+
+.use-wrapper .calcu-wrapper {
+  /* display: flex;  */
+  width: 100%;
+   /* height: 426rpx;  */
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  /* margin-bottom: 70rpx; */
+  margin-bottom: 24rpx;
+}
+
+.use-wrapper .calcu-wrapper .car-img {
+  width: 220rpx;
+  height: 220rpx;
+  margin: 0 auto 8rpx;
+}
+
+.use-wrapper .user-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.use-wrapper .calcu-wrapper .using-desc {
+  /* width: 170rpx; */
+  height: 220rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 62rpx;
+}
+
+.use-wrapper .calcu-wrapper .using-desc .active-text {
+  width: 200rpx;
+  text-align: center;
+}
+
+.use-wrapper .calcu-wrapper .using-desc:last-child {
+  margin-right: 0;
+}
+
+.use-wrapper .calcu-wrapper .using-icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-bottom: 30rpx;
+}
+
+.use-wrapper .calcu-wrapper .num {
+  margin-bottom: 30rpx;
+  /* font-size: 40rpx; *//* color: #333; */
+  font-size: 70rpx;
+  color: #000;
+}
+
+.use-wrapper .calcu-wrapper .num.extra {
+  display: flex;
+}
+
+.use-wrapper .calcu-wrapper .num.extra .unit {
+  font-size: 30rpx;
+  margin-left: 100rpx;
+  margin-top: 20rpx;
+}
+
+.use-wrapper .calcu-wrapper .text {
+  font-size: 28rpx;
+  /* color: #666; */
+  color: #464646;
+}
+
+.use-wrapper .car-info {
+  margin-bottom: 16rpx;
+  /* font-size: 30rpx;
+  color: #666; */
+  font-size: 24rpx;
+  color: #464646;
+  letter-spacing: 0;
+  margin-top: 10rpx;
+}
+
+.use-wrapper .car-warn {
+  font-size: 28rpx;
+  color: #f5bd12;
+  margin-bottom: 44rpx;
+}
+
+.use-wrapper .problem-btn {
+  width: 140rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}
+
+.content-wrapper .calcu-help {
+  width: 100%;
+  height: 46rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  box-sizing: border-box;
+  padding-left: 34rpx;
+  padding-right: 26rpx;
+  /* margin-bottom: 24rpx; */
+}
+
+.content-wrapper .calcu-help .return-car-map {
+  font-size: 32rpx;
+  /* margin-left: 34rpx; */
+}
+
+.content-wrapper .calcu-help .return-car {
+  font-size: 30rpx;
+  text-decoration-line: underline;
+   margin-right: 30rpx; 
+  /* margin-bottom: 24rpx; */
+}

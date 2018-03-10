@@ -1,0 +1,82 @@
+.result-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.head-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400rpx;
+  background-image: linear-gradient(-90deg, #f5bd12 0%, #ffdc00 45%, #fbed73 100%);
+}
+
+.head-wrapper .current-pay {
+  margin-top: 72rpx;
+  font-size: 36rpx;
+  /* font-weight: bold; */
+}
+
+.head-wrapper .cash {
+  display: flex;
+  margin-top: 40rpx;
+}
+
+.head-wrapper .cash .pay-unit {
+  margin-top: 40rpx;
+  font-size: 50rpx;
+}
+
+.head-wrapper .cash .pay-num {
+  font-size: 90rpx;
+}
+
+.head-wrapper .result-msg {
+  display: flex;
+  margin-top: 50rpx;
+}
+
+.head-wrapper .result-msg .yes-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 18rpx;
+}
+
+.head-wrapper .result-msg .result {
+  font-size: 28rpx;
+}
+
+.result-content {
+  width: 100%;
+  margin-top: 20rpx;
+  padding: 0 32rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.result-content .result-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 26rpx 0;
+  border-bottom: 1rpx solid #d2d2d2;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.result-content .result-list:last-child {
+  border-bottom: 0;
+}
+
+.result-wrapper .back-btn {
+  margin-top: 100rpx;
+  width: 80%;
+  background: rgb(253, 225, 39);
+  color: #333;
+}
+
+.result-wrapper .back-btn::after {
+  border: none;
+}

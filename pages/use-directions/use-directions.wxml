@@ -1,0 +1,45 @@
+<!--pages/use-directions/use-directions.wxml-->
+<view class='container'>
+  <view class='title'>熊猫遛娃使用说明</view>
+  <view>
+    <view>1、如何借童车？</view>
+    <view>首先要注册为用户，接着：</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;① 微信->扫一扫->扫描车桩机上的二维码打开熊猫遛娃小程序，点击扫码借童车，扫描车桩机上二维码，即可借童车；
+     &nbsp;&nbsp;&nbsp;&nbsp;② 通过微信公众号享格里拉服务号借童车； 
+     &nbsp;&nbsp;&nbsp;&nbsp;③ 使用微信扫一扫童车柄上的二维码，也可借童车。
+    </text>
+  </view>\n
+  <view>
+    <text>2、如何查看设备分布地址及可借还童车的数量？</text>
+    <text decode="{{true}}" space="{{true}}">\n  &nbsp;&nbsp;&nbsp;&nbsp;通过熊猫遛娃小程序，缩放地图即可查看，点击童车点图标即可查看每个站点童车可借或可还数量。</text>
+  </view>\n
+  <view>
+    <text>3、借童车费用是多少？</text>
+    <text decode="{{true}}" space="{{true}}">\n  &nbsp;&nbsp;&nbsp;&nbsp; 熊猫遛娃首次使用需要交100元押金。 每次使用，前30分钟免费。\n&nbsp;&nbsp;&nbsp;&nbsp;熊猫遛娃按照5元/小时收费，若超过24小时不还童车，将扣除100充值金额。\n&nbsp;&nbsp;&nbsp;&nbsp;当个人账户余额不足时，无法借童车，充值后方可再次借童车。
+    </text>
+  </view>\n
+  <view>
+    <view>4、充值页面的余额包括押金么？</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;可用余额不包括已充值缴纳的押金。</text>
+  </view>\n
+  <view>
+    <view>5、去哪里还童车？</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;去到熊猫遛娃还车点，根据操作指引把童车推送到还车口即可。</text>
+  </view>\n
+  <view>
+    <view>6、如何拿回押金？</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;童车归还以后，方可退押金；余额为负值时，在未借童车状态随时可以申请退回押金。通过操作熊猫遛娃小程序里“我的钱包”的“退”按钮即可，押金将在24小时内退还至原账号。如无法正常退还押金，可通过熊猫遛娃微信公众号联系客服人员进行问题反馈，我们会尽快为用户解决。</text>
+  </view>\n
+  <view>
+    <view>7、车桩取/还车遇到卡住的情况怎么办？</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;如遇到卡住童车的用户，请联系熊猫遛娃客服，客服会根据目前机器卡童车的具体情况，为您解除卡住童车的问题。</text>
+  </view>\n
+  <view>
+    <view>8、已经还了童车，但是显示未还？</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;已将童车推入童车架却未显示还童车成功，请立即联系客服，并说明情况。</text>
+  </view>\n
+  <view>
+    <view>9、如租借到损坏的童车怎么办？</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;如果您发现坏童车，将坏童车归还到还车口，重新借童车即可。</text>
+  </view>
+</view>

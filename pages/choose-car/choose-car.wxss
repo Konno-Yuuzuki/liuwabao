@@ -1,0 +1,89 @@
+@import '../head-temp/head-temp.wxss';
+@import '../control-temp/control-temp.wxss';
+
+.container {
+  position: relative;
+}
+
+.content-wrapper {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+}
+
+.choose-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choose-wrapper .title {
+  margin: 40rpx 0;
+  font-size: 36rpx;
+  color: #333;
+}
+
+.choose-wrapper .car-wrapper {
+  display: flex;
+  padding: 0 26rpx;
+  box-sizing: border-box;
+}
+
+.choose-wrapper .car-wrapper .car-item {
+  margin-right: 12rpx;
+}
+
+.choose-wrapper .car-wrapper .car-item .car-img {
+  width: 76rpx;
+  height: 76rpx;
+}
+
+.choose-wrapper .car-wrapper .car-item:last-child {
+  margin-right: 0;
+}
+
+.choose-wrapper .pay-btn-dimm {
+  width: 600rpx;
+  margin: 64rpx 35rpx 44rpx;
+  line-height: 88rpx;
+  font-size: 36rpx;
+  color: #333;
+  border-radius: 45rpx;
+  text-align: center;
+  background: #d2d2d2;
+}
+
+.choose-wrapper .pay-btn-active {
+  width: 670rpx;
+  height: 176rpx;
+  margin-top: 20rpx;
+}
+
+.choose-wrapper .info-wrapper {
+  display: flex;
+  margin: 84rpx 0 54rpx 0;
+}
+
+.choose-wrapper .info-wrapper .desc-item {
+  display: flex;
+  margin-right: 44rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.choose-wrapper .info-wrapper .desc-item .num {
+  font-size: 40rpx;
+  margin: -5rpx 5rpx;
+  color: #333;
+}
+
+.choose-wrapper .info-wrapper .desc-item:last-child {
+  margin-right: 0;
+}
+
+.choose-wrapper .icon-car {
+  width: 34rpx;
+  height: 34rpx;
+  margin-right: 14rpx;
+}

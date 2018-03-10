@@ -1,0 +1,60 @@
+/* 桩信息框 */
+
+.marks-detail {
+  width: 680rpx;
+  height: 128rpx;
+  position: fixed;
+  left: 50%;
+  bottom: 160rpx;
+  margin-left: -340rpx;
+  transform: translateY(186rpx);
+  z-index: 100;
+  display: none;
+  background: #fff;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14);
+  border-radius: 6px;
+}
+
+.showMarkDetail {
+  display: block;
+  animation: showMarkDetail 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showMarkDetail {
+  from {
+    transform: translateY(186rpx);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.marks-detail .address-name {
+  font-size: 32rpx;
+  color: #000;
+  letter-spacing: 0;
+  margin-left: 24rpx;
+  margin-top: 20rpx;
+  font-weight: bold;
+  line-height: 45rpx;
+}
+
+.marks-detail .address {
+  font-size: 28rpx;
+  color: #464646;
+  letter-spacing: 0;
+  margin-left: 24rpx;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+
+.marks-detail .open-time {
+  font-size: 24rpx;
+  color: #464646;
+  letter-spacing: 0;
+  position: absolute;
+  right: 24rpx;
+  top: 28rpx;
+}

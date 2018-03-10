@@ -1,0 +1,30 @@
+<!-- <view class='result-wrapper' wx:if="{{useCarInfo}}"> -->
+<view class='result-wrapper'>
+
+  <view class='head-wrapper'>
+    <text class='current-pay deep-grey'>本次实际支付</text>
+    <view class='cash'>
+      <text class='pay-unit deep-grey'>￥</text>
+      <text class='pay-num deep-grey'>{{useCarInfo.useAmount}}</text>
+    </view>
+    <view class='result-msg'>
+      <image class='yes-icon' src='/images/ending_select_yes_icon.png'></image>
+      <text class='result grey'>您已成功还车</text>
+    </view>
+  </view>
+  <view class='result-content'>
+    <view class='result-list'>
+      <text class='desc'>租用时长</text>
+      <text class='text'>{{useCarInfo.useTime}}分钟</text>
+    </view>
+    <view class='result-list'>
+      <text class='desc'>订单总费用</text>
+      <text class='text'>{{useCarInfo.useAmount}}元</text>
+    </view>
+    <view class='result-list'>
+      <text class='desc'>余额退还</text>
+      <text class='text'>{{useCarInfo.balance}}元</text>
+    </view>
+  </view>
+  <button catchtap='backIndex' class='back-btn'>返回首页</button>
+</view>

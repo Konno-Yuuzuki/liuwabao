@@ -1,0 +1,13 @@
+/* pages/login-agreement/login-agreement.wxss */
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.container .title {
+  text-align: center;
+  margin-bottom: 30rpx;
+}

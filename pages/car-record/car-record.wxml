@@ -1,0 +1,22 @@
+<view class='record-wrapper' wx:if="{{recordList.length > 0}}">
+  <view class='record-item' wx:for="{{recordList}}" wx:key="idx" wx:for-index="idx" wx:for-item="item">
+    <view class='car-list'>
+      <text class='desc'>童车编号：</text>
+      <text class='desc'>{{item.deviceKindName}}</text>
+    </view>
+    <view class='car-list'>
+      <text class='desc'>日期：</text>
+      <text class='desc'>{{item.inputTime}}</text>
+    </view>
+    <view class='detail'>
+      <view class='pay-info'>
+        <text class='desc'>消费金额：</text>
+        <text class='desc'>{{item.amount}} 元</text>
+      </view>
+      <view class='pay-info'>
+        <text class='desc'>借车时间：</text>
+        <text class='desc'>{{item.useTimeLength}}</text>
+      </view>
+    </view>
+  </view>
+</view>

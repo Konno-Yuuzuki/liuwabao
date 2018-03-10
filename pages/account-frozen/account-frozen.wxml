@@ -1,0 +1,46 @@
+<!--pages/account-frozen/account-frozen.wxml-->
+<view class='contianer'>
+  <view class='hint-box'>
+    <image class='big-succcess-img' src='../../images/icon_success.png'></image>
+    <view class='t-j-c-g'>提交成功</view>
+    <view class='success-hint'>余额将在提交成功，审核后退还</view>
+    <view class='success-time'>提交时间： 2017-02-12 09:29</view>
+
+    <view class='the-consume'>本次预计消费</view>
+    <view class='consume-value'>
+      <text class='yuan'>￥</text>
+      <text class='money-value'>5.00</text>
+    </view>
+    <view class='account-about'>
+      <image src="../../images/icon_small_success.png"></image>
+      <text>账户已冻结</text>
+    </view>
+  </view>
+
+  <view class='list-box'>
+    <view class='list'>
+      <view class='list-label'>租用时长</view>
+      <view class='list-value'>
+        01:00:00s
+      </view>
+    </view>
+    <view class='list'>
+      <view class='list-label'>订单总费用</view>
+      <view class='list-value'>
+        20.00元
+      </view>
+    </view>
+    <!-- <view class='list'>
+      <view class='list-label'>优惠抵扣</view>
+      <view class='list-value'>
+        5.00元
+      </view>
+    </view> -->
+    <view class='list'>
+      <view class='list-label'>余额退还</view>
+      <view class='list-value'>
+        79.00元
+      </view>
+    </view>
+  </view>
+</view>

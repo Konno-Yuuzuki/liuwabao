@@ -1,0 +1,76 @@
+<import src='../map-temp/map-temp.wxml' />
+<!-- <import src='../charge-temp/charge-temp.wxml' /> -->
+<import src='../loading-temp/loading-temp.wxml' />
+<import src='../getcar-temp/getcar-temp.wxml' />
+
+
+<view class='container'>
+  <!-- <template is="chargeTemp" wx:if="{{!isShowModal}}" />  -->
+  <!-- <template is='loadingTemp' />  -->
+
+  <!-- 地图相关 -->
+  <view class='mapbox'>
+    <template is="mapTemp" data="{{hasLogin, userinfo, markers,latitude,longitude,speed,accuracy,controls}}" />
+
+    <!-- 桩的相关信息 -->
+    <cover-view class='marks-detail {{showMarkDetail?"showMarkDetail":""}}' id='1'>
+      <cover-view class='address-name'>凯德梦之龙购物中心</cover-view>
+      <cover-view class='address'>上海市闵行区沪闵路6088号</cover-view>
+      <cover-view class='open-time'>营业时间: 09:00-18:00</cover-view>
+    </cover-view>
+
+    <!-- 取车提示 -->
+    <cover-view class='isCanvas {{getCarNow?"getCar-now":""}}'>
+      <template is='getCarTemp' data="{{canvasText}}" />
+    </cover-view>
+    <!-- 登录按钮 -->
+    <cover-view class='btn-wrapper'>
+      <cover-image class='btn register-btn' wx:if='{{!hasLogin}}' src="/images/register_btn.png" catchtap="onLoginClick"></cover-image>
+      <cover-image class='btn scan-btn' wx:if='{{hasLogin}}' src="/images/scan_btn.png" catchtap="onButtonClick"></cover-image>
+    </cover-view>
+  </view>
+
+  <!-- 系统出错界面 -->
+  <cover-view class='system-error-mask'>
+    <cover-view class='system-error'>
+      <cover-view class='sys-error'>系统出错啦</cover-view>
+      <cover-view class='scan-again'>请重新扫码用车</cover-view>
+      <cover-image class='big-warning-img' src='../../images/icon_big_warning.png'></cover-image>
+      <cover-image class='scan-again-img' src='../../images/scancar.png'></cover-image>
+      <cover-view class='next-talk'>下次再说</cover-view>
+    </cover-view>
+  </cover-view>
+</view>
+
+
+
+
+
+<!-- 流程和资费 -->
+<!-- <cover-view class='introduce'>
+    <cover-view class='logo-box'>
+      <cover-image wx:if="{{!hasLogin}}" class='logo' src='../../images/logo.png'></cover-image>
+    </cover-view>
+    <cover-image class='bannar' src='../../images/index_bannar.png'></cover-image>
+    <cover-view class='charges'>
+      <cover-view class='charges-list'>
+        <cover-view class='charges-title'>预付款</cover-view>
+        <cover-view class='charges-introduce'>还车后自动返还至支付账户</cover-view>
+        <cover-view class='charges-money'>
+          <cover-view class='c-m-top'>100</cover-view>
+          <cover-view class='c-m-bottom'>元</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-view class='charge-line'></cover-view>
+      <cover-view class='charges-list'>
+        <cover-view class='charges-title'>用车计费</cover-view>
+        <cover-view class='charges-introduce'>还车后自动从预付款中抵扣</cover-view>
+        <cover-view class='charges-money'>
+          <cover-view class='c-m-top'>5</cover-view>
+          <cover-view class='c-m-bottom'>元/30分钟</cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+  </cover-view> -->
+
+<!-- {{showMarkDetail?"showMarkDetail":""}} -->

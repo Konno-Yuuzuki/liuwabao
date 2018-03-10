@@ -1,0 +1,33 @@
+<import src='../map-temp/map-temp.wxml' />
+
+<view class='container'>
+  <template is="mapTemp" data="{{hasLogin, userinfo, markers}}" />
+  <view class='content-wrapper'>
+    <view class='choose-wrapper'>
+      <view class='title'>选择车辆</view>
+      <view class='car-wrapper'>
+        <view class='car-item' wx:for="{{deviceStake}}" wx:for-index="idx" wx:for-item="device" wx:key="idx">
+          <image wx:if="{{device.useStatus === 0 && !isSelected}}" catchtap='onSelectCar' class='car-img' data-stackId='{{device.stakeId}}' src='/images/inuse1_car_yes_icon.png'></image>
+          <image wx:if="{{device.useStatus === 0 && isSelected}}" catchtap='onSelectCar' class='car-img' data-carId='{{idx}}' data-stackId='{{device.stakeId}}' src='/images/inuse1_car_xuanzhong_icon.png'></image>
+          <image wx:if="{{device.useStatus === 1}}" class='car-img' src='/images/inuse1_car_no_icon.png'></image>
+        </view>
+      </view>
+      <view wx:if="{{!isSelected}}" catchtap='onPayCar' class='pay-btn-dimm'>支付用车</view>
+      <image wx:if="{{isSelected}}" catchtap='onPayCar' class='pay-btn-active' src='/images/pay_btn.png'></image>
+      <view class='info-wrapper'>
+        <view class='desc-item'>
+          <image src='/images/inues1_charging_icon.png' class='icon-car'></image>
+          <view>计费</view>
+          <view class='num'>5</view>
+          <view>元/半小时</view>
+        </view>
+        <view class='desc-item'>
+          <image src='/images/inues1_payment _icon.png' class='icon-car'></image>
+          <view>预付金</view>
+          <view class='num'>99</view>
+          <view>元</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
